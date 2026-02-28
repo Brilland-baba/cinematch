@@ -596,7 +596,7 @@ def main_app(rec, movies, uid, username):
         render_grid(rec.recommend_new(k=10), uid, rec, movies, n_cols=5, kp="cold")
 
     st.divider()
-    st.markdown('<span class="cm-sec">🔥 Top films du catalogue</span>',
+    st.markdown('<span class="cm-sec">🔥 Top films de notre catalogue</span>',
                 unsafe_allow_html=True)
     render_grid(rec.recommend_new(k=15), uid, rec, movies, n_cols=5, kp="top")
     st.markdown('<span class="cm-sec">🎬 À découvrir</span>', unsafe_allow_html=True)
@@ -623,3 +623,13 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+    # ── FOOTER SIGNATURE ─────────────────────────────────────
+    st.markdown("---")
+    st.markdown("""
+        <div style="text-align:center; color:gray; font-size:14px; margin-top:10px;">
+            © 2026 • 🎬BrillantCiné🎬 • by <strong>BABA C.F. Brilland</strong><br>
+            ENEAM / ISE — Advanced Machine Learning
+        </div>
+    """, unsafe_allow_html=True)
