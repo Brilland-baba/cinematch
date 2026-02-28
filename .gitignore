@@ -4,11 +4,6 @@
 # Python
 __pycache__/
 *.pyc
-
-# Environnement virtuel (si tu en as un)
-venv/
-.env
-
 # Fichiers système
 .DS_Store
 Thumbs.db

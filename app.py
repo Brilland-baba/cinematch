@@ -11,7 +11,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-st.set_page_config(page_title="CineMatch", page_icon="🎬🎬🎬",
+st.set_page_config(page_title="BrillantCiné", page_icon="🎬🎬",
                    layout="wide", initial_sidebar_state="collapsed")
 
 # ── CSS ───────────────────────────────────────────────────────────────────────
@@ -289,7 +289,7 @@ def login_page():
             <div style="font-family:Montserrat,sans-serif;font-weight:900;font-size:3rem;
                         background:linear-gradient(110deg,#ff4e50,#f9d423);
                         -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-                        white-space:nowrap;">🎯 CineMatch</div>
+                        white-space:nowrap;">🎬BrillantCiné🎬</div>
             <div style="font-size:.8rem;color:#6060a0;margin:8px 0 28px;line-height:1.6;">
                 Votre moteur de recommandation personnel<br>
                 <span style="color:#3a3a5a;font-size:.7rem;">ALS · MovieLens 1M · 6 040 utilisateurs</span>
@@ -299,7 +299,7 @@ def login_page():
         name = st.text_input("", placeholder="Votre prénom… (ex: Nathan, Julie)",
                              label_visibility="collapsed", key="login_name")
         st.markdown("<div style='height:8px'></div>", unsafe_allow_html=True)
-        if st.button("🚀 Commencer", key="btn_login", type="primary"):
+        if st.button("🎬🚀 Commencer", key="btn_login", type="primary"):
             n = name.strip()
             if n:
                 st.session_state["uid"]      = name_to_uid(n)
@@ -313,7 +313,7 @@ def login_page():
 def render_header(uid, username):
     h1, h2, h3 = st.columns([2, 5, 2])
     with h1:
-        st.markdown('<div class="cm-logo">🎯 CineMatch</div>'
+        st.markdown('<div class="cm-logo">🎬BrillantCiné🎬</div>'
                     '<div class="cm-sub">ALS · MovieLens 1M</div>',
                     unsafe_allow_html=True)
     with h2:
