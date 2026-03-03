@@ -1,4 +1,4 @@
-#  🎬 CineMatch — High-Scale Recommender System🎬 
+#  🎬 BrillantCiné — High-Scale Recommender System🎬 
 
 > **Moteur de recommandation de films** basé sur l'algorithme ALS (Alternating Least Squares) entraîné sur le dataset MovieLens 1M.
 
